@@ -6,7 +6,7 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 15:27:12 by selow             #+#    #+#             */
-/*   Updated: 2025/05/08 00:50:30 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/08 20:26:40 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t n)
 {
-	char	*dptr;
-	char	*sptr;
+	unsigned char	*dptr;
+	const unsigned char	*sptr;
 
-	dptr = (char *)dst;
-	sptr = (const char *)src;
+	dptr = (unsigned char *)dst;
+	sptr = (const unsigned char *)src;
 	if (sptr < dptr && dptr < sptr + n)
 	{
 		while (n--)
-			*(dptr + n) = *(sptr + n);
+			dptr[n] = sptr[n];
 	}
 	else
 	{

@@ -6,7 +6,7 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/19 00:40:18 by selow             #+#    #+#             */
-/*   Updated: 2025/05/08 13:35:38 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/09 23:26:57 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,6 @@ size_t  ft_strlcpy(char *dst, const char *src, size_t dsize);
 char    *ft_substr(const char* src, int start, int len);
 char	*ft_strjoin(char const *s1, char const *s2);
 void    *ft_memmove(void *dst, const void *src, size_t n);
-
+char    *ft_strtrim(char const *s1, char const *set);
 
 #endif

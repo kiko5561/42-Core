@@ -6,7 +6,7 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 05:17:29 by selow             #+#    #+#             */
-/*   Updated: 2025/05/02 15:33:06 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/09 23:28:20 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_substr(const char* src, int start, int len)
 	int	slen;
 
 	slen = ft_strlen(src);
-	if (slen < start)
+	if (start < 0 || slen < start)
 		return (ft_strdup(""));
 	if ((len + start) > slen)
 		len = slen - start;

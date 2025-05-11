@@ -6,13 +6,13 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 20:12:03 by selow             #+#    #+#             */
-/*   Updated: 2025/05/09 23:32:01 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/10 22:25:59 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	*hashmap_method(char const *s1, char const *set, size_t start, size_t end)
+static char	*ft_hashmap_method(char const *s1, char const *set, size_t start, size_t end)
 {
 	int	hashmap[256];
 	
@@ -38,7 +38,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	start = 0;
 	end = ft_strlen(s1);
 	if (end * ft_strlen(set) > 1000)
-		return (hashmap_method(s1, set, start, end));
+		return (ft_hashmap_method(s1, set, start, end));
 	while (s1[start] && ft_strchr(set, s1[start]))
 		start++;
 	while (end > start && ft_strchr(set, s1[end - 1]))

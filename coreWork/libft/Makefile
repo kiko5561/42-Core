@@ -6,7 +6,7 @@
 #    By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/15 19:16:04 by selow             #+#    #+#              #
-#    Updated: 2025/05/09 23:27:12 by selow            ###   ########.fr        #
+#    Updated: 2025/05/10 23:25:06 by selow            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,9 @@ SRC =	ft_atoi.c \
 	ft_substr.c \
 	ft_strjoin.c \
 	ft_strtrim.c \
+	ft_isalpha.c \
+	ft_isalnum.c \
+
 
 OBJS = $(SRC:.c=.o)
 

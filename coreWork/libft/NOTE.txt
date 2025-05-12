@@ -1,1 +1,0 @@
-1. NEED TO CREATE ft_strchr.c FUNCTION FOR ft_strtrim.c FUNCTION TO WORK.

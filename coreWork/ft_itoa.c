@@ -6,7 +6,7 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 19:29:53 by selow             #+#    #+#             */
-/*   Updated: 2025/04/17 14:43:44 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/12 20:45:47 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,9 +61,16 @@ void	ft_putnbr(int n)
 
 char	*ft_itoa(int n)
 {
+	int	ndigits;
 	// similar to putnbr + atoi
-
-		
+	ndigits = 1;
+	else if (n > 9)
+		ndigits += 1
+		ft_itoa(n / 10);
+	str = malloc((ndigits + 1) * sizeof(char));
+	if (str == NULL)
+		return (NULL);
+	
 }
 
 #include <stdio.h>

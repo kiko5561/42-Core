@@ -6,7 +6,7 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/19 00:40:18 by selow             #+#    #+#             */
-/*   Updated: 2025/05/12 14:46:35 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/15 19:03:38 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,12 @@ char    *ft_strtrim(char const *s1, char const *set);
 int	ft_isalpha(char c);
 int	ft_isalnum(char c);
 char    *ft_strnstr(const char *big, const char *little, size_t len);
-
-
+int	ft_tolower(int c);
+int	ft_toupper(int c);
+char	*ft_itoa(int n);
+void	ft_putstr_fd(char *str, int fd);
+void	ft_putendl_fd(char *s, int fd);
+int	ft_isascii(int c);
 
 
 #endif

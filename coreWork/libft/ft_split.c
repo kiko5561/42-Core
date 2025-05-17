@@ -6,12 +6,11 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/10 22:17:15 by selow             #+#    #+#             */
-/*   Updated: 2025/05/16 18:17:15 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/17 23:49:05 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
 
 static	char	**ft_free_all(char **new)
 {
@@ -26,20 +25,19 @@ static	char	**ft_free_all(char **new)
 
 static	int	ft_count_words(char *s,char c)
 {
-	int	i;
 	int	count;
 
-	i = 0;
 	count = 0;
-	while (s[i])
+	while (*s)
 	{
-		if (s[i] == c)
-			count += 1;
-		while (s[i] == c)
-			i++;
-		i++;	
+		while (*s == c)
+			s++;
+		if (*s == '\0')
+			break;
+		count += 1;
+		while (*s && *s != c)
+			s++;
 	}
-	printf("%i\n", count);
 	return (count);
 }
 
@@ -89,18 +87,4 @@ char	**ft_split(const char *s, char c)
 	}
 	new[i] = NULL;
 	return (new);
-}
-
-int	main(void)
-{
-	char	str[100] = "everyone is here now";
-	char	**new = ft_split(",,,apple,,,banana,,,", ',');
-	int	i = 0;
-
-	while (new[i])
-	{
-		printf("%s\n", new[i++]);
-	}
-
-	return 0;
 }

@@ -6,7 +6,7 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 18:46:02 by selow             #+#    #+#             */
-/*   Updated: 2025/05/18 11:57:11 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/18 15:22:30 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dsize)
 	if (dsize <= dlen)
 		return (dsize + slen);
 	i = 0;
-	while (src[i] != '\0')
+	while (src[i] != '\0' && (dlen + i + 1) < dsize)
 	{
 		dst[dlen + i] = src[i];
 		i++;

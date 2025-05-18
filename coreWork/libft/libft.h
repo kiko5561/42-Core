@@ -6,7 +6,7 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/19 00:40:18 by selow             #+#    #+#             */
-/*   Updated: 2025/05/15 19:03:38 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/18 01:24:11 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,10 @@ char	*ft_itoa(int n);
 void	ft_putstr_fd(char *str, int fd);
 void	ft_putendl_fd(char *s, int fd);
 int	ft_isascii(int c);
+char    **ft_split(const char *s, char c);
+char	*ft_strmapi(const char *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+int     ft_isprint(int c);
 
 
 #endif

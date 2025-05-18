@@ -6,9 +6,13 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 19:11:06 by selow             #+#    #+#             */
-/*   Updated: 2025/05/15 19:11:16 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/18 01:41:51 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
+{
+	
+}

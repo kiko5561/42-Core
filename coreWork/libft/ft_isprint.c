@@ -6,13 +6,15 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 19:06:54 by selow             #+#    #+#             */
-/*   Updated: 2025/05/15 19:07:57 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/18 01:21:49 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	isprint(int c)
+int	ft_isprint(int c)
 {
-	
+	if (c >= 32 && c <= 176)
+		return (c);
+	return (0);
 }

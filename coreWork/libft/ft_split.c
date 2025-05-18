@@ -6,7 +6,7 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/10 22:17:15 by selow             #+#    #+#             */
-/*   Updated: 2025/05/17 23:49:05 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/18 12:11:30 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,6 @@ char	**ft_split(const char *s, char c)
 			new[i][j++] = *s++;
 		}
 		new[i][j] = '\0';
-		printf("Word[%i]: %s\n", i, new[i]);
 		i++;
 	}
 	new[i] = NULL;

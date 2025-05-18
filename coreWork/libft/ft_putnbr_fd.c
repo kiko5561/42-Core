@@ -6,13 +6,13 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 19:24:50 by selow             #+#    #+#             */
-/*   Updated: 2025/05/14 05:22:23 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/18 12:14:20 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	ft_putchar_fd(char c, int fd)
+static void	ft_putchar(char c, int fd)
 {
 	write(fd, &c, 1);
 }
@@ -31,5 +31,5 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	if (n > 9)
 		ft_putnbr_fd(n / 10, fd);
-	ft_putchar_fd((n % 10) + '0', fd);
+	ft_putchar((n % 10) + '0', fd);
 }

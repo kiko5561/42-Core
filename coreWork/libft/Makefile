@@ -6,7 +6,7 @@
 #    By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/15 19:16:04 by selow             #+#    #+#              #
-#    Updated: 2025/05/18 01:22:15 by selow            ###   ########.fr        #
+#    Updated: 2025/05/18 12:13:06 by selow            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,6 +47,10 @@ SRC =	ft_atoi.c \
 	ft_strmapi.c \
 	ft_striteri.c \
 	ft_isprint.c \
+	ft_memmove.c \
+	ft_strncmp.c \
+	ft_strlcat.c \
+	ft_putnbr_fd.c \
 
 OBJS = $(SRC:.c=.o)
 

@@ -6,16 +6,15 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/19 00:40:18 by selow             #+#    #+#             */
-/*   Updated: 2025/05/18 01:24:11 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/18 12:13:31 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H 
 #define LIBFT_H
 
-#include <stdio.h>
 # include <unistd.h>
-# include <stddef.h>
+# include <stdio.h>
 # include <stdlib.h>
 
 int     ft_atoi(const char *str);
@@ -49,6 +48,9 @@ char    **ft_split(const char *s, char c);
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 int     ft_isprint(int c);
-
+void    *ft_memmove(void *dst, const void *src, size_t n);
+int	ft_strncmp(const char *s1, const char *s2, size_t n);
+size_t	ft_strlcat(char *dst, const char *src, size_t dsize);
+void    ft_putnbr_fd(int n, int fd);
 
 #endif

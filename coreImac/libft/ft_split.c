@@ -6,7 +6,7 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/10 22:17:15 by selow             #+#    #+#             */
-/*   Updated: 2025/05/19 21:22:13 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/20 00:03:17 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,19 +51,12 @@ static	int	ft_count_wordlen(char *s, char c)
 	return (i);
 }
 
-char	**ft_split(const char *s, char c)
+static char	**_fill_new(const char *s, char c)
 {
-	char	**new;
-	int		wordcount;
-	int		i;
-	int		j;
-	int		wordlen;
+	int	i;
+	int	j;
 
 	i = 0;
-	wordcount = ft_count_words((char *)s, c);
-	new = malloc(sizeof(char *) * (wordcount + 1));
-	if (new == NULL)
-		return (NULL);
 	while (*s)
 	{
 		while (*s == c)
@@ -82,4 +75,20 @@ char	**ft_split(const char *s, char c)
 	}
 	new[i] = NULL;
 	return (new);
+}
+
+char	**ft_split(const char *s, char c)
+{
+	char	**new;
+	int		wordcount;
+	int		i;
+	int		j;
+	int		wordlen;
+
+	i = 0;
+	wordcount = ft_count_words((char *)s, c);
+	new = malloc(sizeof(char *) * (wordcount + 1));
+	if (new == NULL)
+		return (NULL);
+	return (_fill_new(s, c));
 }

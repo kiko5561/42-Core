@@ -6,7 +6,7 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/10 22:17:15 by selow             #+#    #+#             */
-/*   Updated: 2025/05/20 00:29:36 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/20 00:32:42 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,7 @@ char	**ft_split(const char *s, char c)
 {
 	char	**new;
 	int		wordcount;
-	
+
 	wordcount = ft_count_words((char *)s, c);
 	new = malloc(sizeof(char *) * (wordcount + 1));
 	if (new == NULL)

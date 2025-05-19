@@ -6,13 +6,13 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 20:12:03 by selow             #+#    #+#             */
-/*   Updated: 2025/05/19 21:06:43 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/19 22:56:43 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	*_tab(char *s1, char *set, size_t start, size_t end)
+static char	*_tab(char const *s1, char const *set, size_t start, size_t end)
 {
 	int	hashmap[256];
 

@@ -6,7 +6,7 @@
 #    By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/15 19:16:04 by selow             #+#    #+#              #
-#    Updated: 2025/05/19 23:52:11 by selow            ###   ########.fr        #
+#    Updated: 2025/05/20 00:24:33 by selow            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,7 +52,9 @@ SRC =	ft_atoi.c \
 	ft_strlcat.c \
 	ft_putnbr_fd.c \
 
-BONUSES = ft_lstsize.c \
+BONUSES =	ft_lstsize.c \
+			ft_lstdelone.c \
+		
 
 OBJS = $(SRC:.c=.o)
 

@@ -6,7 +6,7 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/19 00:40:18 by selow             #+#    #+#             */
-/*   Updated: 2025/05/19 21:52:51 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/19 23:05:32 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,11 @@ void	*ft_memmove(void *dst, const void *src, size_t n);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 size_t	ft_strlcat(char *dst, const char *src, size_t dsize);
 void	ft_putnbr_fd(int n, int fd);
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 
 #endif

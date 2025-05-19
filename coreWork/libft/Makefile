@@ -6,12 +6,12 @@
 #    By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/15 19:16:04 by selow             #+#    #+#              #
-#    Updated: 2025/05/18 12:13:06 by selow            ###   ########.fr        #
+#    Updated: 2025/05/19 16:38:29 by selow            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-CFLAGS = -Wall -Wextra -Werror -g3
+CFLAGS = -Wall -Wextra -Werror
 CC = gcc
 AR = ar rcs
 RM = rm -f
@@ -51,6 +51,8 @@ SRC =	ft_atoi.c \
 	ft_strncmp.c \
 	ft_strlcat.c \
 	ft_putnbr_fd.c \
+
+BONUS = ft_lstsize.c \
 
 OBJS = $(SRC:.c=.o)
 

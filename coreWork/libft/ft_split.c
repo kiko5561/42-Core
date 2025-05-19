@@ -6,7 +6,7 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/10 22:17:15 by selow             #+#    #+#             */
-/*   Updated: 2025/05/18 12:11:30 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/19 17:04:40 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ static	int	ft_count_wordlen(char *s, char c)
 		i++;
 	return (i);
 }
+
 char	**ft_split(const char *s, char c)
 {
 	char	**new;
@@ -78,9 +79,7 @@ char	**ft_split(const char *s, char c)
 		}
 		j = 0;
 		while (*s != c && *s)
-		{
 			new[i][j++] = *s++;
-		}
 		new[i][j] = '\0';
 		i++;
 	}

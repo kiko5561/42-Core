@@ -6,7 +6,7 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/20 19:10:48 by selow             #+#    #+#             */
-/*   Updated: 2025/04/21 18:53:00 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/19 15:21:27 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ void	*ft_memcpy(void	*dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-
 /*
 SYNOPSIS
        #include <string.h>

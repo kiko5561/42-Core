@@ -6,7 +6,7 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 15:27:12 by selow             #+#    #+#             */
-/*   Updated: 2025/05/08 20:26:40 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/19 15:21:44 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,9 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 }
 
 /*
+DESCRIPTION
+    Allocate (with malloc(3)) and return the new element. The member variable 'content' is initialized with the value of the 'content' parameter. The 'next' variable is initialized to NULL.
+
 SYNOPSIS
        #include <string.h>
 

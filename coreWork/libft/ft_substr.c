@@ -6,20 +6,20 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 05:17:29 by selow             #+#    #+#             */
-/*   Updated: 2025/05/09 23:28:20 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/19 19:33:00 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(const char* src, int start, int len)
+char	*ft_substr(const char *src, int start, int len)
 {
-	int	i;
+	int		i;
 	char	*substr;
-	int	slen;
+	int		slen;
 
 	slen = ft_strlen(src);
-	if (start < 0 || slen < start)
+	if (start < 0 || start > slen)
 		return (ft_strdup(""));
 	if ((len + start) > slen)
 		len = slen - start;
@@ -35,7 +35,3 @@ char	*ft_substr(const char* src, int start, int len)
 	substr[i] = '\0';
 	return (substr);
 }
-
-/*
-basically just grab a specific length of a substring you want
-*/

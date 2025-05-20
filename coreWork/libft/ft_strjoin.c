@@ -6,7 +6,7 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 19:31:24 by selow             #+#    #+#             */
-/*   Updated: 2025/05/02 20:01:03 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/19 21:10:42 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strjoin(const char *s1, const char *s2)
 {
 	char	*new;
-	int	len;
+	int		len;
 	char	*temp;
 
 	len = ft_strlen(s1) + ft_strlen(s2) + 1;
@@ -40,4 +40,3 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	A pointer to the new concatenated string.
 	NULL if the memory allocation fails.
 */
-

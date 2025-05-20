@@ -6,7 +6,7 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 15:27:12 by selow             #+#    #+#             */
-/*   Updated: 2025/05/19 15:21:44 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/19 21:28:00 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t n)
 {
-	unsigned char	*dptr;
+	unsigned char		*dptr;
 	const unsigned char	*sptr;
 
 	dptr = (unsigned char *)dst;
@@ -31,23 +31,3 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-
-/*
-DESCRIPTION
-    Allocate (with malloc(3)) and return the new element. The member variable 'content' is initialized with the value of the 'content' parameter. The 'next' variable is initialized to NULL.
-
-SYNOPSIS
-       #include <string.h>
-
-       void *memmove(void dest[.n], const void src[.n], size_t n);
-
-DESCRIPTION
-       The  memmove() function copies n bytes from memory area src to mem‐
-       ory area dest.  The memory areas may overlap: copying  takes  place
-       as  though the bytes in src are first copied into a temporary array
-       that does not overlap src or dest, and the bytes  are  then  copied
-       from the temporary array to dest.
-
-RETURN VALUE
-       The memmove() function returns a pointer to dest.
-*/

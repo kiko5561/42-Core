@@ -6,7 +6,7 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 07:21:47 by selow             #+#    #+#             */
-/*   Updated: 2025/05/11 23:41:41 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/19 21:07:03 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	len;
+	int				len;
 	unsigned char	find;
 
 	len = ft_strlen(s);

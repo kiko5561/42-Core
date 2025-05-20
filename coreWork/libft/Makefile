@@ -6,7 +6,7 @@
 #    By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/15 19:16:04 by selow             #+#    #+#              #
-#    Updated: 2025/05/19 16:38:29 by selow            ###   ########.fr        #
+#    Updated: 2025/05/20 15:45:13 by selow            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,7 +52,15 @@ SRC =	ft_atoi.c \
 	ft_strlcat.c \
 	ft_putnbr_fd.c \
 
-BONUS = ft_lstsize.c \
+BONUSES =	ft_lstsize.c \
+		ft_lstdelone.c \
+		ft_lstclear.c \
+		ft_lstiter.c \
+		ft_lstadd_front.c \
+		ft_lstadd_back.c \
+		ft_lstlast.c \
+		ft_lstnew.c \
+		ft_lstmap.c \
 
 OBJS = $(SRC:.c=.o)
 
@@ -64,6 +72,9 @@ $(NAME): $(OBJS)
 %.o: %.c $(INCS)
 	$(CC) $(CFLAGS) -c $< -o $@
 	
+bonus: $(BONUSES:.c=.o)
+	$(AR) $(NAME) $^
+
 clean:
 	rm -f *.o
 
@@ -72,3 +83,4 @@ fclean: clean
 
 re: fclean all
 
+.PHONY: re fclean bonus all clean

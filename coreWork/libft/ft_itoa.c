@@ -6,7 +6,7 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 19:29:53 by selow             #+#    #+#             */
-/*   Updated: 2025/05/15 18:55:56 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/19 19:14:54 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,18 +34,8 @@ static int	ft_count_digits_and_neg(long n)
 	return (ndigits);
 }
 
-char	*ft_itoa(int n)
+static char	*ft_parse(long num, char *new, int len)
 {
-	char	*new;
-	int	len;
-	long	num;
-	
-	len = ft_count_digits_and_neg(n);
-	new = malloc(sizeof(char) * (len + 1));
-	if (new == NULL)
-		return (NULL);
-	num = (long)n;
-	new[len--] = '\0';
 	if (num == 0)
 	{
 		new[len] = '0';
@@ -63,3 +53,22 @@ char	*ft_itoa(int n)
 	}
 	return (new);
 }
+
+char	*ft_itoa(int n)
+{
+	char	*new;
+	int		len;
+	long	num;
+
+	len = ft_count_digits_and_neg(n);
+	new = malloc(sizeof(char) * (len + 1));
+	if (new == NULL)
+		return (NULL);
+	num = (long)n;
+	new[len--] = '\0';
+	return (ft_parse(num, new, len));
+}
+
+/*
+	Error: Nested parentheses, braces or brackets are not correctly closed
+*/

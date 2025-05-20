@@ -6,7 +6,7 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 17:52:54 by selow             #+#    #+#             */
-/*   Updated: 2025/05/18 00:57:50 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/19 21:07:56 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char	*new;
+	char			*new;
 	unsigned int	i;
 
 	new = malloc((ft_strlen(s) + 1));

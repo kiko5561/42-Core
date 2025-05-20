@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Aft_strchr.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 23:32:16 by selow             #+#    #+#             */
-/*   Updated: 2025/05/11 23:45:22 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/19 21:11:51 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-       The strchr() function returns a pointer to the first occurrence of the character c in the string s.
+returns a pointer to the first occurrence 
+of the character c in the string s.
 */
 
 char	*ft_strchr(const char *s, int c)

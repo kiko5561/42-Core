@@ -6,13 +6,13 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 18:41:14 by selow             #+#    #+#             */
-/*   Updated: 2025/05/15 18:47:21 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/19 21:26:14 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
 	if (s == NULL)
 		return ;

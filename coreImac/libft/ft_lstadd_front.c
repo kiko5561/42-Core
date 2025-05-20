@@ -6,7 +6,7 @@
 /*   By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/18 22:48:37 by selow             #+#    #+#             */
-/*   Updated: 2025/05/19 11:55:06 by selow            ###   ########.fr       */
+/*   Updated: 2025/05/20 11:43:38 by selow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
+	if (!lst || !new)
+		return ;
 	new->next = *lst;
-	*lst->new;
+	*lst = new;
 }

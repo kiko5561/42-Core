@@ -6,7 +6,7 @@
 #    By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/15 19:16:04 by selow             #+#    #+#              #
-#    Updated: 2025/05/20 12:17:03 by selow            ###   ########.fr        #
+#    Updated: 2025/05/20 14:46:48 by selow            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,7 +60,8 @@ BONUSES =	ft_lstsize.c \
 		ft_lstadd_back.c \
 		ft_lstlast.c \
 		ft_lstnew.c \
-		ft_lst
+		ft_lstmap.c \
+
 OBJS = $(SRC:.c=.o)
 
 all: $(NAME)

@@ -6,7 +6,7 @@
 #    By: selow <selow@student.42kl.edu.my>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/15 19:16:04 by selow             #+#    #+#              #
-#    Updated: 2025/05/20 14:46:48 by selow            ###   ########.fr        #
+#    Updated: 2025/05/20 15:45:13 by selow            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -83,3 +83,4 @@ fclean: clean
 
 re: fclean all
 
+.PHONY: re fclean bonus all clean
